@@ -16,8 +16,8 @@ function navbar() {
     
         <div>Black Friday</div>
         <div>Holiday Gift</div>
-        <div>Women</div>
-        <div>Men</div>
+        <div><a href="women.html">Women</a></div>
+        <div><a href="men.html">Men</a></div>
         <div>Kids</div>
         <div>Young Adults</div>
         <div>Activewear</div>
