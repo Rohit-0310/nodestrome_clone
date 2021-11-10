@@ -2,7 +2,7 @@ function navbar() {
 
     return `<div id="top_nav">
     <div id="navbar">
-        <h3><a href="/">NORDSTROME</a></h3>
+        <div id="top_nav_1"><a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nordstrom_Logo_2019.svg/1280px-Nordstrom_Logo_2019.svg.png"/></a></div>
 
         <div id="options">
             <input type="text" id="Search" placeholder="Search" />

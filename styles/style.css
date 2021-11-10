@@ -10,6 +10,22 @@
 #top_nav{
     display: grid;
 }
+#top_nav_1{
+    width: 24%;
+    height: 60px;
+    margin-top: 2%;
+}
+#nav_1_1{
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* color: red;
+    text-emphasis-color: black; */
+}
+#nav_1_2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serifs;
+}
 #navbar_2{
     display: flex;
     width: 100%;
@@ -41,7 +57,44 @@ img{
     margin-left: 5%;
     /* border: 2px solid red; */
   }
-  #meals_Search{
+  #Search{
       /* width: 20%; */
-      height: 20px;
+      height: 45px;
+      margin-top: 3%;
+      margin-left: 1%;
+    }
+    #mid_1{
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    #mid_top_1{
+        width: 1300px;
+        display: grid;
+        grid-template-columns:70% 25%;
+        grid-gap: 0%;
+        /* padding-left: 4%;
+        padding-right: 4%; */
+    }
+    #mid_top_1_1{
+        width: 100%;
+        padding-left: 7%;
+    }
+    #mid_top_1_2{
+        /* width: ; */
+        height: 1080px;
+    }
+    #mid_top_2{
+        width: 1300px;
+        display: flex;
+        padding-left: 4%;
+        padding-right: 4%;
+        
+    }
+    #mid_top_3{
+        width: 100%;
+        display: grid;
+        grid-template-columns:30% 70%;
+        grid-gap: 0%;
+        padding-left: 2%;
     }
