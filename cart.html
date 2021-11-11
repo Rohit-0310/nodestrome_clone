@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My cart</title>
-</head>
-<style>
-    body{
-        background-color:darksalmon;
-    }
-    img {
-      width: 5%;
-    }
-</style>
-<body>
-    <h1>My Cart</h1>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Nodestrome | Men</title>
+    </head>
+    <style>
+        /* body{
+            background-color:darksalmon;
+        }
+        img {
+          width: 5%;
+        } */
+        #data{
+            border: 2px solid black;
+            width: 20%;
+        }
+    </style>
+  <link rel="stylesheet" href="/styles/style.css" />
+    <body>
 
-    <h1 id="total"></h1>
+		<div id="navbar"></div>
 
+		<!-- <div id="container"></div> -->
 
-    <button onclick="makePayment()">Make Payment</button>
-    <div id="data"></div>
-</body>
+        <h1>My Cart</h1>
+
+        <h1 id="total"></h1>
+    
+    
+        <button onclick="makePayment()">Make Payment</button>
+        <div id="data"></div>
+
+	</body>
 </html>
-<script>
 
-// add_cart(p)
+<script type="module">
+	import navbar from "./components/navbar.js";
+    import { getData} from "./scripts/showData.js"
+
+	let navbar_div = document.getElementById("navbar");
+
+	navbar_div.innerHTML = navbar();
+
+
+    // add_cart(p)
     let cart_data = JSON.parse(localStorage.getItem("cart"));
 
     let data_div = document.getElementById("data");
@@ -40,15 +59,16 @@
 
         img.src = product.image;
 
-        let p_name = document.createElement('p')
+        let names = document.createElement('p')
 
-        p_name.innerText = product.title;
+        names.innerText = product.title;
 
-        let p_price = document.createElement('p')
+        let prices = document.createElement('p')
 
-        p_price.innerText = product.p_price;
+        prices.textContent = `₹ ${product.price}`;
+        prices.style.color = "red"
 
-        div.append(img, p_name, p_price);
+        div.append(img, names, prices);
 
         data_div.append(div)
 
@@ -68,14 +88,5 @@
         }, 4000);
     }
 
+	
 </script>
-
-
-
-
-
-
-
-
-
-

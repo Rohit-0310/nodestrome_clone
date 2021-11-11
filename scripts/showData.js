@@ -27,7 +27,7 @@ function append(products){
 
         let price = document.createElement('p')
 
-        price.innerText = product.price;
+        price.textContent = `₹ ${product.price}`;
 
         let btn = document.createElement("button");
         btn.innerText = "Add To Cart";
