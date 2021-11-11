@@ -29,7 +29,22 @@ function append(products){
 
         price.innerText = product.price;
 
-        div.append(img, name, price);
+        let btn = document.createElement("button");
+        btn.innerText = "Add To Cart";
+        
+        btn.onclick = function() {
+          addToCart(product);
+
+        }
+        let btndetails = document.createElement("button");
+        btndetails.innerText = "View Details";
+        
+        btndetails.onclick = function() {
+          addToCart(product);
+
+        }
+
+        div.append(img, name, price, btn,btndetails);
 
         container.append(div);
 
