@@ -66,6 +66,9 @@ if (localStorage.getItem("cart") == null){
     cart_data.push(p);
 
     localStorage.setItem("cart", JSON.stringify(cart_data));
+    setTimeout(() => {
+      alert("Items Added to the Bag")
+    }, 2000);
 
 
 

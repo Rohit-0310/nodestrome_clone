@@ -7,8 +7,11 @@
     /* border: solid 2px black;
     border-radius: 20px; */
 }
+#options{
+    font-size: 15px;
+}
 body {
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 #top_nav{
     display: grid;
@@ -115,6 +118,13 @@ img{
     #footer_1_6{
         display: flex;
         gap: 4px;
+    }
+    #footer_1_6_1{
+        /* border: 1px solid black; */
+        margin-top: 15px;
+        border-radius: 15px;
+        height: 25px;
+        width: 25px;
     }
     .flag-1{
         /* border: 1px solid black; */

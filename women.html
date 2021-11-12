@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Nodestrome | Women</title>
+      <title>Women | Nodestrome</title>
     </head>
 	<style>
 		.top-us{
@@ -67,6 +67,7 @@
 	.then((res) => {
 		let container = document.getElementById("container");
 
+		append(res, container);
 		append(res, container);
 	})
 	.catch((err) => {

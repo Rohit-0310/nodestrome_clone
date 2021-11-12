@@ -8,7 +8,7 @@ function navbar() {
             <input type="text" id="Search" placeholder="Search" />
             <button onclick="Search()" id="Search">Search</button>
             <h3><a href="LogIn.html">LogIn</a></h3>
-            <h3><a href="cart.html">Cart</a></h3>
+            <h3><a href="cart.html">MyBag</a></h3>
         </div>
     </div>
     
