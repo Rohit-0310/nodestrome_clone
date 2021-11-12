@@ -46,7 +46,7 @@
             </div>
             <div>
                 <label for="ccnumber">Credit Card Number</label>
-                <input type="text" placeholder="0000 0000 0000 0000" autocomplete="email">
+                <input type="text" placeholder="XXXX XXXX XXXX XXXX" autocomplete="email">
             </div>
             <div>
                 <label for="ccmonth">Month</label>
@@ -89,11 +89,11 @@
 
             <div>
                 <label for="cvv">CVV/CVC</label>
-                <input id="cvv" type="text" placeholder="123">
+                <input id="cvv" type="password" placeholder="XXX">
             </div>
 
             <div>
-                <button type="button" onclick="makePayment()">Complete Payment</button>
+                <button type="button" id="paymentbtn">Complete Payment</button>
             </div>
         </div>
 
@@ -144,12 +144,10 @@
     
     total_h1.innerHTML = 'Total Price- ₹' + total;
 
-    //make Payment
-    function makePayment(){
-        setTimeout(function(){
-            alert("Payment Copmlete");
-            
-        }, 2000);
-    }
+    //make Payment function
+    var makePayment = document.querySelector("#paymentbtn")
+    makePayment.addEventListener("click",()=>{
+        alert("successfull")
+    })
 
 </script>

@@ -7,7 +7,7 @@ function navbar() {
         <div id="options">
             <input type="text" id="Search" placeholder="Search" />
             <button onclick="Search()" id="Search">Search</button>
-            <h3><a href="Signupandlogin/Sing up.html">Sign In</a></h3>
+            <h3><a href="SignIn.html">Sign In</a></h3>
             <h3><a href="cart.html">Cart</a></h3>
         </div>
     </div>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Nodestrome | SignUp</title>
+    </head>
+	<style>
+		#navbar {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* border: solid 2px black;
+    border-radius: 20px; */
+}
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+#top_nav{
+    display: grid;
+}
+#top_nav_1{
+    width: 24%;
+    height: 60px;
+    margin-top: 2%;
+}
+#nav_1_1{
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* color: red;
+    text-emphasis-color: black; */
+}
+#nav_1_2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+#navbar_2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 4%;
+    /* padding-right: 4%; */
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#options h3 {
+    padding-left: 30px;
+    /* padding-right: 10px; */
+}
+
+img{
+      width: 80%;
+  }
+#container{
+
+    display: grid;
+    grid-template-columns:  repeat(4, 25%);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    height: 720;
+    width: 85%;
+    /* border: 2px solid red; */
+    /* border: 2px solid red; */
+  }
+  #Search{
+      /* width: 20%; */
+      height: 45px;
+      margin-top: 3%;
+      margin-left: 1%;
+    }
+    #mid_1{
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    #mid_top_1{
+        width: 1300px;
+        display: grid;
+        grid-template-columns:70% 25%;
+        grid-gap: 0%;
+        /* padding-left: 4%;
+        padding-right: 4%; */
+    }
+    #mid_top_1_1{
+        width: 100%;
+        padding-left: 7%;
+    }
+    #mid_top_1_2{
+        /* width: ; */
+        height: 1080px;
+    }
+    #mid_top_2{
+        width: 1300px;
+        display: flex;
+        padding-left: 4%;
+        padding-right: 4%;
+        
+    }
+    #mid_top_3{
+        width: 100%;
+        display: grid;
+        grid-template-columns:30% 70%;
+        grid-gap: 0%;
+        padding-left: 2%;
+    }
+
+    
+	#footer_1{
+        display: grid;
+        grid-template-columns:  15% 15% 15% 15% 15% 15% 15%;
+        margin-left: 5%;
+        background-color: #FAFAFA;
+    }
+    #footer_1_6{
+        display: flex;
+        gap: 4px;
+    }
+    .flag-1{
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        height: 15px;
+        width: 15px;
+    }
+    #cart_1{
+        display: grid;
+        grid-template-columns: 50% 35%;
+        grid-gap: 10%;
+        border: red 5px solid;
+    }
+    #cheackout{
+        height: 50px;
+        width: 200px;
+        font-size: 25px;            
+    }
+	</style>
+ 
+    <body>
+		<!-- signin funcationality -->
+		<div id="top_nav">
+			<div id="navbar">
+				<div id="top_nav_1"><a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nordstrom_Logo_2019.svg/1280px-Nordstrom_Logo_2019.svg.png"/></a></div>
+		
+				<div id="options">
+					<input type="text" id="Search" placeholder="Search" />
+					<button onclick="Search()" id="Search">Search</button>
+					<h3><a href="SignIn.html">Sign In</a></h3>
+					<h3><a href="cart.html">Cart</a></h3>
+				</div>
+			</div>
+			
+			<div id="navbar_2">
+			
+				<div><a href="BlackFriday.html">Black Friday</a></div>
+				<div><a href="holidaygift.html">Holiday Gift</a></div>
+				<div><a href="women.html">Women</a></div>
+				<div><a href="men.html">Men</a></div>
+				<div>Kids</div>
+				<div>Young Adults</div>
+				<div>Activewear</div>
+				<div><a href="index.html">Home</a></div>
+				<div>Beauty</div>
+				<div>Designer</div>
+				<div>Brands</div>
+			
+			</div>
+			</div>
+
+
+		<div>
+			<div id="signup">
+				<form onsubmit="Signup(event)" id="signup-form">
+					<h1>Signup</h1>
+					<div>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="name" />
+					</div>
+	
+	
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="email" />
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" id="password" placeholder="password" />
+					</div>
+					<div>
+						<label for="mobile">Mobile No</label>
+						<input type="number" id="mobile" placeholder="mobile" />
+					</div>
+					<div>
+						<label for="username">UserName</label>
+						<input type="text" id="username" placeholder="username" />
+					</div>
+
+					<div>
+						<label for="description">Description</label>
+						<input type="text" id="description" placeholder="description" />
+					</div>
+					<div>
+						<!-- <input type="submit" onclick="signinSuccessfully()"/> -->
+						<!-- <input type="submit" onclick="signinSuccessfully()"/> -->
+						<button type="submit" onclick="signinSuccessfully()">SignUp</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- sign in funcanility end -->
+
+
+
+		<!-- <div id="footer"></div> -->
+
+		<div id="footer_1">
+			<div id="footer_1_1">
+				<h3>Customer Service</h3>
+				<p>Contact Us</p>
+				<p>Order Status</p>
+				<p>Return Policy & Exchanges</p>
+				<p>Price Adjustment</p>
+				<p>Gift Card</p>
+				<p>FAQ</p>
+				<p>product Recalls</p>
+				<p><img class="flag-1" src="https://n.nordstrommedia.com/alias/IN.gif"> India</p>
+			</div>
+		
+			<div id="footer_1_2">
+				<h3>About Us</h3>
+				<p>Careers</p>
+				<p>Corporate Social</p>
+				<p>Responsibility</p>
+				<p>Diversity, Inclusion & Belonging</p>
+				<p>Investor Relations</p>
+				<p>Press Releases</p>
+				<p>Get Email Updates</p>
+				<p>Nordstrom Blog</p>
+			</div>
+		
+			<div id="footer_1_3">
+				<h3>Stores & Services</h3>
+				<p>Find a Store</p>
+				<p>Free Style Help</p>
+				<p>Alterations & Tailoring</p>
+				<p>Trunk Club</p>
+				<p>Pop-In Shop</p>
+				<p>Virtual Events</p>
+				<p>Spa Nordstrom</p>
+				<p>Nordstrom Restaurants</p>
+				<p>Nordstrom Local</p>
+			</div>
+		
+			<div id="footer_1_4">
+				<h3>Nordstrom Card & Rewards</h3>
+				<p>The Nordy Club Rewards</p>
+				<p>Pay My Bill</p>
+				<p>Manage My Nodestrome Card</p>
+			</div>
+		
+			<div id="footer_1_5">
+				<h3>Nordstrom, Inc.</h3>
+				<p>Nordstrom Rack</p>
+				<p>Nordstrome Canada</p>
+				<p>Trunk Club</p>
+			</div>
+			
+			<div id="footer_1_6">
+				<p>IN</p>
+				<p>TY</p>
+				<p>TW</p>
+				<p>FB</p>
+				
+			</div>
+
+			<div>
+			<p>Top</p>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+<script>	
+
+	// <!-- signin funcationality -->
+
+	function Signup(e){
+        e.preventDefault();
+
+        let form = document.getElementById("signup-form");
+
+        let user_data = {
+            name: form.name.value,
+            email: form.email.value,
+            password: form.password.value,
+            username: form.username.value,
+            mobile: form.mobile.value,
+            description: form.description.value,
+        };
+        // console.log(user_data)
+        user_data = JSON.stringify(user_data)
+
+        fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
+            method:'POST',
+            
+            body: user_data,
+    
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+        .then((res) => {
+            return res.json();
+        })
+        .then((res) => {
+            console.log("res", res);
+        })
+        .catch((err) => {
+            console.log("err:", err)
+        });
+    }
+
+	// <!-- sign in funcanility end -->
+
+	function signinSuccessfully(){
+        setTimeout(function(){
+            alert("SignUp SuccessFully! Now Login");
+            
+        }, 2000);
+    }
+    
+</script>

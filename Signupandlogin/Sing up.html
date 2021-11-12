@@ -8,25 +8,42 @@
 </head>
 
 <style>
-    #signup-form{
+    /* #signup-form{
         width: 30%;
     }
     input {
         margin-top: 5px;
-    }
+    } */
 </style>
 <body>
     <div>
         <div id="signup">
             <form onsubmit="Signup(event)" id="signup-form">
                 <h1>Signup</h1>
-                <input type="text" id="name" placeholder="name" />
-                <input type="email" id="email" placeholder="email" />
-                <input type="password" id="password" placeholder="password" />
-                <input type="text" id="username" placeholder="username" />
-                <input type="number" id="mobile" placeholder="mobile" />
-                <input type="text" id="description" placeholder="description" />
-                <a href="Login.html"> <input type="submit" /> </a>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="name" />
+                </div>
+
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="password" />
+                </div>
+                <div>
+                    <label for="mobile">Mobile No</label>
+                    <input type="number" id="mobile" placeholder="mobile" />
+                </div>
+                
+                <div>
+                    <input type="submit"/>
+                </div>
+                <!-- <input type="text" id="username" placeholder="username" /> -->
+                <!-- <input type="text" id="description" placeholder="description" /> -->
             </form>
         </div>
     </div>
@@ -46,9 +63,9 @@
             name: form.name.value,
             email: form.email.value,
             password: form.password.value,
-            username: form.username.value,
+            // username: form.username.value,
             mobile: form.mobile.value,
-            description: form.description.value,
+            // description: form.description.value,
         };
         // console.log(user_data)
         user_data = JSON.stringify(user_data)
