@@ -13,6 +13,8 @@
 
 		<div id="container"></div>
 
+		<div id="footer"></div>
+
 	</body>
 </html>
 
@@ -23,7 +25,15 @@
 	let navbar_div = document.getElementById("navbar");
 
 	navbar_div.innerHTML = navbar();
-	//https://www.themealdb.com/api/json/v1/1/categories.php
+
+
+	import footer from "./components/footer.js";
+
+	let footer_div = document.getElementById("footer");
+
+	footer_div.innerHTML = footer();
+	
+
 	let response = getData("https://fakestoreapi.com/products/category/jewelery");
 
 	response

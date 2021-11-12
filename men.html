@@ -6,12 +6,18 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Nodestrome | Men</title>
     </head>
+	<style>
+		
+	</style>
   <link rel="stylesheet" href="/styles/style.css" />
     <body>
 
 		<div id="navbar"></div>
 
 		<div id="container"></div>
+
+
+		<div id="footer"></div>
 
 	</body>
 </html>
@@ -23,13 +29,21 @@
 	let navbar_div = document.getElementById("navbar");
 
 	navbar_div.innerHTML = navbar();
-	//https://www.themealdb.com/api/json/v1/1/categories.php
+
+	import footer from "./components/footer.js";
+
+	let footer_div = document.getElementById("footer");
+
+	footer_div.innerHTML = footer();
+
+
 	let response = getData("https://fakestoreapi.com/products/category/men's clothing");
 
 	response
 	.then((res) => {
 		let container = document.getElementById("container");
 
+		append(res, container);
 		append(res, container);
 	})
 	.catch((err) => {

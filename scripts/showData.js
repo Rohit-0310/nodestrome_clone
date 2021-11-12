@@ -18,6 +18,8 @@ function append(products){
         let div = document.createElement('div')
 
         let img = document.createElement('img')
+        img.style.height = "350px";
+        img.style.width = "250px"
 
         img.src = product.image;
 
