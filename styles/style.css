@@ -7,6 +7,9 @@
     /* border: solid 2px black;
     border-radius: 20px; */
 }
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
 #top_nav{
     display: grid;
 }
@@ -108,4 +111,25 @@ img{
         grid-template-columns:  15% 15% 15% 15% 15% 15% 15%;
         margin-left: 5%;
         background-color: #FAFAFA;
+    }
+    #footer_1_6{
+        display: flex;
+        gap: 4px;
+    }
+    .flag-1{
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        height: 15px;
+        width: 15px;
+    }
+    #cart_1{
+        display: grid;
+        grid-template-columns: 50% 35%;
+        grid-gap: 10%;
+        border: red 5px solid;
+    }
+    #cheackout{
+        height: 50px;
+        width: 200px;
+        font-size: 25px;            
     }

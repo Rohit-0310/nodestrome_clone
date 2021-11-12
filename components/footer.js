@@ -10,7 +10,7 @@ function footer() {
                     <p>Gift Card</p>
                     <p>FAQ</p>
                     <p>product Recalls</p>
-                    <p>India</p>
+                    <p><img class="flag-1" src="https://n.nordstrommedia.com/alias/IN.gif"> India</p>
                 </div>
             
                 <div id="footer_1_2">
@@ -53,10 +53,11 @@ function footer() {
                 </div>
                 
                 <div id="footer_1_6">
-                    <p>Instagram</p>
-                    <p>YouTube</p>
-                    <p>Twitter</p>
-                    <p>Facebook</p>
+                    <p>IN</p>
+                    <p>TY</p>
+                    <p>TW</p>
+                    <p>FB</p>
+                    
                 </div>
 
                 <div>

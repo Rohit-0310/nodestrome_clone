@@ -15,7 +15,8 @@
         } */
         #data{
             border: 2px solid black;
-            width: 20%;
+            width: 50%;
+            margin-left: 5%;
         }
     </style>
   <link rel="stylesheet" href="/styles/style.css" />
@@ -25,13 +26,20 @@
 
 		<!-- <div id="container"></div> -->
 
-        <h1>My Cart</h1>
+        <h1>Shopping Bag</h1>
 
-        <h1 id="total"></h1>
+        <div id="cart_1">
+
+            <div id="data"></div>
     
+            <div>
+                <h1 id="total"></h1>
+        
+            <button id="cheackout"><a href="cheackout.html">CHEACKOUT</a></button>
     
-        <button onclick="makePayment()">Make Payment</button>
-        <div id="data"></div>
+            </div>
+
+        </div>
 
         <div id="footer"></div>
 
@@ -69,12 +77,14 @@
 
         let names = document.createElement('p')
 
-        names.innerText = product.title;
+        names.textContent = product.title;
+        // names.style.float = "right"
 
         let prices = document.createElement('p')
 
         prices.textContent = `₹ ${product.price}`;
         prices.style.color = "red"
+        // prices.style.float = "right"
 
         div.append(img, names, prices);
 
@@ -88,13 +98,6 @@
     let total_h1 = document.getElementById("total");
     
     total_h1.innerHTML = 'Total Price- ₹' + total;
-
-    function makePayment(){
-        setTimeout(function(){
-
-            alert("Payment Successful");
-        }, 4000);
-    }
 
 	
 </script>
